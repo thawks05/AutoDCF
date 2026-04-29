@@ -1,6 +1,8 @@
-# CLAUDE.md
+# README.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+## What this project is
+
+A single-file PyQt5 desktop app ("GIR DCF Autocomplete") that pulls 5 years of annual financials plus LTM (trailing twelve months) from Yahoo Finance (`yfinance`) and writes them into an existing Excel DCF workbook. The user supplies a ticker, an `.xlsx` path, and a sheet name; the tool handles the rest.
 
 ## Running the app
 
@@ -9,13 +11,7 @@ pip install yfinance pandas openpyxl PyQt5
 python "import yfinance as yf.py"
 ```
 
-The file name is literally `import yfinance as yf.py` — always quote it in shell commands.
-
-The logo is loaded from a hardcoded path (`/Users/timothyh/Desktop/ICDCFAUTO/IC logo.png`); if it's missing the app shows a text fallback and continues normally.
-
-## What this project is
-
-A single-file PyQt5 desktop app ("GIR DCF Autocomplete") that pulls 5 years of annual financials plus LTM (trailing twelve months) from Yahoo Finance (`yfinance`) and writes them into an existing Excel DCF workbook. The user supplies a ticker, an `.xlsx` path, and a sheet name; the tool handles the rest.
+**The logo is loaded from a hardcoded path; if it's missing the app shows a text fallback and continues normally.**
 
 ## Architecture
 
